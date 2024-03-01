@@ -1,0 +1,1 @@
+select products.id, products.name from products,categories where categories.name like 'super%' and id_categories  = categories.id
