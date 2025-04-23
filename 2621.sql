@@ -1,3 +1,5 @@
-SELECT p.name FROM products p, providers b WHERE 
-p.id_providers = b.id AND
- amount BETWEEN 10 AND 20 AND b.name LIKE 'P%';
+select products.name
+from products join providers
+on products.id_providers = providers.id
+where providers.name like 'P%' and
+products.amount BETWEEN 10 and 20
