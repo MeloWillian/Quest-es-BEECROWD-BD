@@ -1,0 +1,1 @@
+select name, Cast(SUBSTRING(payday::TEXT from 9 for 2) AS int) AS day from loan 
